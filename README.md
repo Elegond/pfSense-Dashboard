@@ -1,3 +1,21 @@
+
+    create a bucket and take note of the bucketID
+    create a mapping (not available in UI, use CLI influx v1 dbrp create --bucket-id "bucketID" --db "mybucket" --rp "autogen" --default --org "myorg")
+
+Next, disable ALL auth options:
+
+image
+We want to use a v2 token instead.
+
+After you have created your token and granted it access to your bucket set the Custom HTTP Header:
+Header: Authorization
+Value: Token xyzPnhduwnkVltuwJTyXWcM33uzBWBhPRAEYTdhI0clAKZfZcZgMYUS_FJK4UkeQtXE54Mwg9rUrfEf3mSDEFXV==
+^ note that the value must include the word "Token", followed by a space and then your actual token.
+
+
+
+
+
 ## What's Monitored
 - Active Users
 - Uptime
