@@ -1,4 +1,8 @@
 
+https://docs.influxdata.com/influxdb/v2/query-data/influxql/dbrp/#list-dbrp-mappings
+https://docs.influxdata.com/influxdb/v2/query-data/influxql/#map-unmapped-buckets
+
+
     create a bucket and take note of the bucketID
     create a mapping (not available in UI, use CLI influx v1 dbrp create --bucket-id "bucketID" --db "mybucket" --rp "autogen" --default --org "myorg")
 
